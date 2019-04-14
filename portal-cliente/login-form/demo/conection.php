@@ -1,5 +1,5 @@
 <?php 
 
-$strcon=mysqli_connect('db-php.mysql.uhserver.com','alphadir','Alphagsd1316@','db_academia') or die("Error Database");
+$strcon=mysqli_connect('bd-academia.mysql.uhserver.com','alphadir','Alphagsd1316-','bd_academia') or die("Error Database");
 
 ?>

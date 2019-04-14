@@ -1,6 +1,6 @@
 <?php
 include("conection.php");
-echo "ola teste";
+
 $login=_POST['txtLogin'];
 $senha=_POST['txtSenha'];
 
