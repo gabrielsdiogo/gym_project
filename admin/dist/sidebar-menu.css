@@ -31,6 +31,10 @@ body{
   
   
 }
+
+.footerlabel{
+  height: 10%;
+}
 .cabecalho span{
   font-size: 15px;
   font-family: 'Oswald', sans-serif;
