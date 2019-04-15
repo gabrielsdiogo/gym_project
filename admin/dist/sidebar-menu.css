@@ -32,9 +32,28 @@ body{
   
 }
 
-.footerlabel{
-  height: 10%;
+.frmuseradd{
+  margin-top: 10px;
+  text-align: center;
+  display: -webkit-inline-box;;
+  width: 100%;
+  height: 100%;
+  margin-left: 3%;
+  
 }
+
+.frmuseradd .senha{
+  margin-left: 24%;
+}
+
+.frmuseradd .nome{
+  margin-left: 2%;
+}
+
+.frmuseradd .button{
+  float: right;
+}
+
 .cabecalho span{
   font-size: 15px;
   font-family: 'Oswald', sans-serif;
