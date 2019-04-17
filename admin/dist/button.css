@@ -24,6 +24,7 @@
   margin: 1rem auto;
   text-transform: uppercase;
   border: 1px solid currentColor;
+  text-decoration: none;
 }
 
 .btn-6 {
@@ -35,14 +36,16 @@
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: #1399ce;
+  background-color: rgba(19, 153, 206, 0.836);
   transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: -1;
+  text-decoration: none;
 }
 .btn-6:hover {
-  color: #feffff;
+  color: #1a2226;
+  text-decoration: none;
 }
 .btn-6:hover span {
   width: 225%;
