@@ -29,10 +29,10 @@ body {
 }
 
 .frmuseradd {
-  margin-top: 10px;
+  margin-top: 24px;
   text-align: center;
   display: -webkit-inline-box;
-  width: 100%;
+  width: 96%;
   height: 100%;
   margin-left: 3%;
 }
@@ -105,6 +105,7 @@ body {
   margin-left: 16px;
   border: 1px solid black;
   box-shadow: 0px 1px 10px 2px black;
+  border-radius: 13px;
 }
 
 .animate-menu-push {
@@ -518,4 +519,64 @@ LEVEL 4. SETTINGS
 .field {
   --fieldBorderColor: #d1c4e9;
   --fieldBorderColorActive: #673ab7;
+}
+
+.inp {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+}
+.inp .labe {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  font-size: 16px;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.inp .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #07f;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.inp input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 0;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.inp input:hover {
+  background: rgba(34, 50, 84, 0.03);
+}
+.inp input:not(:placeholder-shown) + span {
+  color: #5a667f;
+  transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus {
+  background: none;
+  outline: none;
+}
+.inp input:focus + span {
+  color: #07f;
+  transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus + span + .border {
+  transform: scaleX(1);
 }
