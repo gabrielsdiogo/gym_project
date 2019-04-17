@@ -580,3 +580,5 @@ LEVEL 4. SETTINGS
 .inp input:focus + span + .border {
   transform: scaleX(1);
 }
+
+/* Animated button */

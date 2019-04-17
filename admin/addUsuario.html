@@ -12,6 +12,7 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./dist/sidebar-menu.css" />
+    <link rel="stylesheet" href="./dist/button.css" />
   </head>
 
   <body>
@@ -25,14 +26,12 @@
     <section id="conteudo">
       <div id="conteudo" class="conteudo">
         <form class="frmuseradd">
-          
           <label for="inp" class="inp">
             <input type="text" name="txtNome" id="inp" placeholder="&nbsp;" />
             <span class="labe">Nome:</span>
             <span class="border"></span>
           </label>
           <br /><br />
-          
 
           <label for="inp" class="inp">
             <input type="text" name="txtUser" id="inp" placeholder="&nbsp;" />
@@ -65,6 +64,11 @@
         </form>
       </div>
     </section>
+    <div id="button">
+      <div class="a wrap">
+        <a class="btn-6" href="#">Salvar<span></span></a>
+      </div>
+    </div>
     <section class="animate-menu animate-menu-left">
       <ul class="sidebar-menu">
         <li class="sidebar-header">MAIN NAVIGATION</li>
@@ -647,6 +651,7 @@
 
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="./dist/sidebar-menu.js"></script>
+    <script src="./dist/button-animated.js"></script>
     <script>
       $.sidebarMenu($(".sidebar-menu"));
       $.sidebarMenu($(".sidebar-menu-rtl"));
