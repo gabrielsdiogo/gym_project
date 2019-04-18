@@ -12,6 +12,13 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./dist/sidebar-menu.css" />
+    <script src="./dist/js/jquery.mask.min.js"></script>
+    <script src="./dist/js/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#txtCpf").mask("000.000.000-00");
+      });
+    </script>
   </head>
 
   <body>
@@ -54,7 +61,7 @@
           <br />
           <br />
           <label for="inp" class="inp">
-            <input type="text" name="txtCpf" id="inp" placeholder="&nbsp;" />
+            <input type="text" name="txtCpf" id="txtCpf" placeholder="&nbsp;" />
             <span class="labe">CPF:</span>
             <span class="border"></span>
           </label>
@@ -648,6 +655,7 @@
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="./dist/sidebar-menu.js"></script>
     <script src="./dist/button-animated.js"></script>
+
     <script>
       $.sidebarMenu($(".sidebar-menu"));
       $.sidebarMenu($(".sidebar-menu-rtl"));
