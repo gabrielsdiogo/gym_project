@@ -18,7 +18,7 @@
     <?php
         $mysqli = new mysqli('db-academia.mysql.uhserver.com','alphadir','Alphagsd1316-','bd_academia') or die(mysqli_error($mysqli));
         $result=$mysqli->query("SELECT * FROM alunos") or die($mysqli->error);
-    
+        
     
     
     
@@ -36,7 +36,7 @@
           <thead>
             <tr>
               <th>nome</th>
-              <th>cpf</th>
+              <th>CPF</th>
               <th colspan="2" class="bot">Incluir usuario</th>
             </tr>
           </thead>
@@ -50,7 +50,7 @@
                       if($row['user_web']==1){
                         echo "<a style='color:blue; text-decoration:none; cursor:default;'>Adicionado</a>";
                       }else{
-                        echo "<a href='' class='btn btn-info'>Adicionar</a>";
+                        echo "<a href='processa.php?id=".$row['IDaluno']."' class='btn btn-info'>Adicionar</a>";
                       }
                   
                   
