@@ -580,7 +580,7 @@ LEVEL 4. SETTINGS
 }
 
 /* Animated button */
-.btn {
+.btnn {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -604,8 +604,8 @@ LEVEL 4. SETTINGS
   font-weight: 700;
   float: right;
 }
-.btn:hover,
-.btn:focus {
+.btnn:hover,
+.btnn:focus {
   color: #fff;
   outline: 0;
 }
@@ -621,3 +621,6 @@ LEVEL 4. SETTINGS
 }
 
 /* END ANIMATED BUTTON */
+.bot {
+  text-align: center;
+}

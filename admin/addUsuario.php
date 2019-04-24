@@ -12,16 +12,17 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./dist/sidebar-menu.css" />
-    <script src="./dist/js/jquery.mask.min.js"></script>
-    <script src="./dist/js/jquery-3.3.1.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $("#txtCpf").mask("000.000.000-00");
-      });
-    </script>
   </head>
 
   <body>
+    <?php
+        $mysqli = new mysqli('db-academia.mysql.uhserver.com','alphadir','Alphagsd1316-','bd_academia') or die(mysqli_error($mysqli));
+        $result=$mysqli->query("SELECT * FROM alunos") or die($mysqli->error);
+    
+    
+    
+    
+    ?>
     <div id="cabecalho" class="cabecalho">
       <p>Adicionar Usuarios</p>
       <a id="pushRight" class=""
@@ -31,45 +32,37 @@
 
     <section id="conteudo">
       <div id="conteudo" class="conteudo">
-        <form class="frmuseradd">
-          <label for="inp" class="inp">
-            <input type="text" name="txtNome" id="inp" placeholder="&nbsp;" />
-            <span class="labe">Nome:</span>
-            <span class="border"></span>
-          </label>
-          <br /><br />
-
-          <label for="inp" class="inp">
-            <input type="text" name="txtUser" id="inp" placeholder="&nbsp;" />
-            <span class="labe">Nome de usuario:</span>
-            <span class="border"></span>
-          </label>
-          <br />
-          <br />
-          <label for="inp" class="inp">
-            <input type="text" name="txtSenha" id="inp" placeholder="&nbsp;" />
-            <span class="labe">Senha:</span>
-            <span class="border"></span>
-          </label>
-          <br />
-          <br />
-          <label for="inp" class="inp">
-            <input type="text" name="txtEmail" id="inp" placeholder="&nbsp;" />
-            <span class="labe">E-mail:</span>
-            <span class="border"></span>
-          </label>
-          <br />
-          <br />
-          <label for="inp" class="inp">
-            <input type="text" name="txtCpf" id="txtCpf" placeholder="&nbsp;" />
-            <span class="labe">CPF:</span>
-            <span class="border"></span>
-          </label>
-          <br />
-          <br />
-        </form>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>nome</th>
+              <th>cpf</th>
+              <th colspan="2" class="bot">Incluir usuario</th>
+            </tr>
+          </thead>
+          <?php
+                while ($row=$result->fetch_assoc()): ?>
+            <tr>
+              <td><?php echo $row['nome']?></td>
+              <td><?php echo $row['cpf']; ?></td>
+              <td class="bot">
+                  <?php
+                      if($row['user_web']==1){
+                        echo "<a style='color:blue; text-decoration:none; cursor:default;'>Adicionado</a>";
+                      }else{
+                        echo "<a href='' class='btn btn-info'>Adicionar</a>";
+                      }
+                  
+                  
+                  ?>
+              
+                
+              </td>
+            </tr>
+          <?php endwhile ?>
+        </table>
       </div>
-      <button class="btn third">Salvar</button>
+      <button class="btnn third">Salvar</button>
     </section>
 
     <section class="animate-menu animate-menu-left">
