@@ -1,3 +1,15 @@
+<?php
+      session_start();
+      if(!isset($_SESSION['code'])){
+        session_destroy();
+        echo "<script>location.href=\"../index.html\";</script>";
+        die();
+      }
+    
+    
+    
+    
+    ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,6 +27,7 @@
   </head>
 
   <body>
+
     <div id="cabecalho" class="cabecalho">
       <p>Administrador</p>
       <a id="pushRight" class=""
@@ -255,43 +268,9 @@
           </ul>
         </li>
         <li>
-          <a href="#">
-            <i class="fa fa-share"></i> <span>Multilevel</span>
-            <i class="fa fa-angle-left pull-right"></i>
+          <a href="logoff.php">
+            <i class="fa fa-share"></i> <span>Sair</span>
           </a>
-          <ul class="sidebar-submenu">
-            <li>
-              <a href="#"><i class="fa fa-circle-o"></i> Level One</a>
-            </li>
-            <li>
-              <a href="#"
-                ><i class="fa fa-circle-o"></i> Level One
-                <i class="fa fa-angle-left pull-right"></i
-              ></a>
-              <ul class="sidebar-submenu">
-                <li>
-                  <a href="#"><i class="fa fa-circle-o"></i> Level Two</a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-circle-o"></i> Level Two
-                    <i class="fa fa-angle-left pull-right"></i
-                  ></a>
-                  <ul class="sidebar-submenu">
-                    <li>
-                      <a href="#"><i class="fa fa-circle-o"></i> Level Three</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-circle-o"></i> Level Three</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-circle-o"></i> Level One</a>
-            </li>
-          </ul>
         </li>
         <li>
           <a href="../../documentation/index.html"

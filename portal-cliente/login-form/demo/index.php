@@ -15,6 +15,15 @@
   </head>
 
   <body>
+    <?php
+      session_start();
+      if(isset($_SESSION['code'])){
+        echo "<script>location.href=\"../../../admin/administrador.php\";</script>";
+      }
+
+    
+    
+    ?>
     <div class="container_inner__login">
       <div class="login">
         <div class="login_profile">
