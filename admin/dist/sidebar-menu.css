@@ -106,6 +106,26 @@ body {
   box-shadow: 0px 1px 10px 2px black;
   border-radius: 13px;
 }
+.tabela-add {
+  background-color: white;
+  width: 98%;
+  height: 400px;
+  margin-top: 25px;
+  margin-left: 16px;
+  margin-bottom: 25px;
+  border: 1px solid black;
+  box-shadow: 0px 1px 10px 2px black;
+  border-radius: 13px;
+}
+
+.header h3 {
+  background-color: #007aff;
+  text-align: center;
+  color: #fff;
+  margin-top: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
 
 .animate-menu-push {
   left: 0;
@@ -586,7 +606,7 @@ LEVEL 4. SETTINGS
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
+  background-color: rgba(177, 177, 177, 0.61);
   border: 2px solid #e74c3c;
   border-radius: 0.6em;
   color: #e74c3c;
@@ -607,7 +627,7 @@ LEVEL 4. SETTINGS
 }
 .btnn:hover,
 .btnn:focus {
-  color: #fff;
+  color: rgb(0, 0, 0);
   outline: 0;
 }
 
@@ -626,6 +646,7 @@ LEVEL 4. SETTINGS
   text-align: center;
 }
 /* SCROLLBAR */
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -648,3 +669,47 @@ LEVEL 4. SETTINGS
   background: #5bc0de;
 }
 /* END SCROLLBAR */
+
+/* ANIMATION PROCESSA.PHP */
+.anime {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* END ANIMATION */
