@@ -20,7 +20,7 @@
         $result=$mysqli->query("SELECT * FROM alunos") or die($mysqli->error);
         
     
-    
+        
     
     ?>
     <div id="cabecalho" class="cabecalho">
@@ -62,9 +62,47 @@
           <?php endwhile ?>
         </table>
       </div>
-      <button class="btnn third">Salvar</button>
-      <div class="conteudo">
 
+      <button class="btnn third">Salvar</button>
+
+      <div class="conteudo">
+      <form class="frmuseradd">
+          <label for="inp" class="inp">
+            <input type="text" name="txtNome" id="inp" placeholder="&nbsp;" />
+            <span class="labe">Nome:</span>
+            <span class="border"></span>
+          </label>
+          <br /><br />
+
+          <label for="inp" class="inp">
+            <input type="text" name="txtUser" id="inp" placeholder="&nbsp;" />
+            <span class="labe">Nome de usuario:</span>
+            <span class="border"></span>
+          </label>
+          <br />
+          <br />
+          <label for="inp" class="inp">
+            <input type="text" name="txtSenha" id="inp" placeholder="&nbsp;" />
+            <span class="labe">Senha:</span>
+            <span class="border"></span>
+          </label>
+          <br />
+          <br />
+          <label for="inp" class="inp">
+            <input type="text" name="txtEmail" id="inp" placeholder="&nbsp;" />
+            <span class="labe">E-mail:</span>
+            <span class="border"></span>
+          </label>
+          <br />
+          <br />
+          <label for="inp" class="inp">
+            <input type="text" name="txtCpf" id="txtCpf" placeholder="&nbsp;" />
+            <span class="labe">CPF:</span>
+            <span class="border"></span>
+          </label>
+          <br />
+          <br />
+      </form>
       
       </div>
     </section>
