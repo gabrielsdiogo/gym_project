@@ -50,6 +50,7 @@ body{
 @media only screen and (max-width: 620px){
   html{
     background: #3b3333;
+    display: block;
   }
   body{
     width: 0px;
