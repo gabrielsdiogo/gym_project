@@ -47,6 +47,24 @@ body{
   font:normal 75% Arial, Helvetica, sans-serif;
 }
 
+@media only screen and (max-width: 620px){
+  html{
+    background: #3b3333;
+  }
+  body{
+    width: 0px;
+  }
+
+}
+/* @media only screen and (max-width: 620px){
+  html{
+    background: #13E8E9;
+  }
+  body{
+    background: #13E8E9;
+  }
+
+} */
 canvas{
   display:block;
   vertical-align:bottom;

@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  unset($_SESSION['code']);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

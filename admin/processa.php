@@ -1,10 +1,13 @@
 <?php
+session_start();
+if(isset($_SESSION['nome'])){
 
-if(isset($_GET['id'])){
-    $id=$_GET['id'];
-    $name=$_GET['name'];
+    $id=$_SESSION['id'];
+    $name=$_SESSION['nome'];
     
     //ao cadastrar novo usuario web, colocar usar esse id para alterar o campo user_web na tabela alunos  
+}else{
+  unset($_SESSION['nome']);
 }
 
 
@@ -64,7 +67,10 @@ if(isset($_GET['id'])){
                       if($row['user_web']==1){
                         echo "<a style='color:blue; text-decoration:none; cursor:default;'>Adicionado</a>";
                       }else{
-                        echo "<a href='processa.php?id=".$row['IDaluno']."&name=".$row['nome']."' class='btn btn-info'>Adicionar</a>";
+                        
+                        $_SESSION['name']=$row['nome'];
+                        $_SESSION['id']=$row['IDaluno'];
+                        echo "<a href='processa.php' class='btn btn-info'>Adicionar</a>";
                       }
                   
                   
@@ -86,7 +92,7 @@ if(isset($_GET['id'])){
         <button class="btnn third">Salvar</button>
       <form class="frmuseradd" action="" method="post"autocomplete="off">          
           <label for="inp" class="inp">
-            <input type="text" name="txtUser" id="inp" placeholder="&nbsp;" value=""/>
+            <input type="text" name="txtUser" id="inp" placeholder="&nbsp;" value="<?php echo $name;?>"/>
             <span class="labe">Nome de usuario:</span>
             <span class="border"></span>
           </label>

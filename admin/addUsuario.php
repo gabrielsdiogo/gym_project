@@ -18,7 +18,7 @@
     <?php
         $mysqli = new mysqli('db-academia.mysql.uhserver.com','alphadir','Alphagsd1316-','bd_academia') or die(mysqli_error($mysqli));
         $result=$mysqli->query("SELECT * FROM alunos") or die($mysqli->error);
-        
+        session_start();
     
         
     
@@ -47,10 +47,13 @@
               <td><?php echo $row['cpf']; ?></td>
               <td class="bot">
                   <?php
+                      
                       if($row['user_web']==1){
                         echo "<a style='color:blue; text-decoration:none; cursor:default;'>Adicionado</a>";
                       }else{
-                        echo "<a href='processa.php?id=".$row['IDaluno']."&name=".$row['nome']."' class='btn btn-info'>Adicionar</a>";
+                        
+                        
+                        echo "<a href='processa.php' class='btn btn-info'><button >Adicionar</button></a>";
                       }
                   
                   

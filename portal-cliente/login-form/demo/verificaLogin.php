@@ -1,7 +1,7 @@
 <?php
 include("conection.php");
 session_start();
-$_SESSION['code']=true;
+
 $login=$_POST['txtLo'];
 $senha=$_POST['txtSe'];
 
@@ -13,10 +13,11 @@ $dados=mysqli_fetch_assoc($query);
 
 
 if($dados['usuario']==$login && $dados['senha']==$senha){
-    
-    echo "<script>location.href=\"../../../admin/administrador.php\";</script>";
+     $_SESSION['code']=true;
+     echo "<script>location.href=\"../../../admin/administrador.php\";</script>";
 }else{
     echo "nao deu certo";
+    session_destroy();
 }
 
 
