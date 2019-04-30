@@ -109,7 +109,7 @@ h6 {
 }
 
 .section-header::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 60px;
@@ -140,7 +140,7 @@ h6 {
   background-color: #f6f7fd;
 }
 
-.portal a{
+.portal a {
   color: #fff;
   padding: 7px 22px;
   border-radius: 50px;
@@ -155,13 +155,16 @@ h6 {
   float: right;
   margin-right: 40%;
 }
-
-.portal a:hover{
+@media only screen and (max-width: 620px) {
+  .portal a {
+    margin-right: 0px;
+  }
+}
+.portal a:hover {
   background: #f82249;
-
 }
 
-.portal li{
+.portal li {
   list-style: none;
   margin-right: -100%;
   margin-top: -1px;
@@ -565,7 +568,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -581,7 +584,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 120px;
   height: 120px;
@@ -610,7 +613,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .play-btn:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -722,21 +725,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-.custo a{
+.custo a {
   color: #f82249;
   margin-left: -7px;
   margin-top: -10px;
 }
 
-.custo a:hover{
-  color: #FFF;
+.custo a:hover {
+  color: #fff;
   transition-duration: 0.3s;
 }
 
-.custo2{
+.custo2 {
   margin-top: 30px;
 }
-
 
 /*--------------------------------------------------------------
 # Speakers Section
@@ -878,7 +880,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .tab-pane {
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 #schedule .schedule-item {
@@ -1262,7 +1264,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets .card {
   border: none;
   border-radius: 5px;
-  transition: all  0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
 }
 
