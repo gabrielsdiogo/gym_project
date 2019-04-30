@@ -49,29 +49,17 @@ body{
 
 @media only screen and (max-width: 720px){
   html{
-    background: #3b3333;
+    background: #222d32;
     display: block;
   }
   body{
     width: 0px;
   }
-  .card {
-    position: relative;
-    display: inline-block;
-    max-width: 95%;
-    min-width: 90%;
-    box-sizing: border-box;
-    padding: 30px 25px;
-    background-color: white;
-    border-radius: 40px;
-  
-    left: 50%;
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    margin-left: auto;
-    margin-right: auto;
+  .logo{
+    left: 70px;
+  }
+  .container_inner__login .login_profile img{
+    width: 287px;
   }
 
 }
@@ -261,6 +249,8 @@ body .container_inner__login .login_profile {
 body .container_inner__login .login_profile img {
   position: relative;
   top: 18px;
+  margin-right: auto;
+  margin-left: auto;
 }
 body .container_inner__login .login_profile .logo {
   z-index: 2;
