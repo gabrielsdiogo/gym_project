@@ -14,6 +14,34 @@ body {
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
+::selection {
+  background-color: #f82249;
+  color: #fff;
+}
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 50px #f82249be;
+  border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f82249ec;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f82249;
+}
+/* END SCROLLBAR */
 
 a {
   color: #f82249;

@@ -25,6 +25,7 @@
     
     ?>
     <div class="container_inner__login">
+
       <div class="login">
         <div class="login_profile">
           <img class="logo" src="image/logoSite.png" />

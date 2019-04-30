@@ -47,7 +47,7 @@ body{
   font:normal 75% Arial, Helvetica, sans-serif;
 }
 
-@media only screen and (max-width: 620px){
+@media only screen and (max-width: 720px){
   html{
     background: #3b3333;
     display: block;
@@ -55,7 +55,24 @@ body{
   body{
     width: 0px;
   }
-
+  .card {
+    position: relative;
+    display: inline-block;
+    max-width: 95%;
+    min-width: 90%;
+    box-sizing: border-box;
+    padding: 30px 25px;
+    background-color: white;
+    border-radius: 40px;
+  
+    left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
 /* @media only screen and (max-width: 620px){
@@ -230,7 +247,7 @@ body .container_inner__login .login .center {
 body .container_inner__login .login_profile {
   border-radius: 100px;
   height: 80px;
-  width: 60px;
+  width: 40%;
   background: none;
   margin-bottom: 40px;
   margin: 0 auto;
