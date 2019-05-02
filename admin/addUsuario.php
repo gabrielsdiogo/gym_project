@@ -53,7 +53,7 @@
                       }else{
                         
                         
-                        echo "<a href='processa.php' class='btn btn-info'><button >Adicionar</button></a>";
+                        echo "<a href='processa.php' class='btn btn-info'>Adicionar</a>";
                       }
                   
                   
