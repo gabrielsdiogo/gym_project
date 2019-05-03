@@ -7,9 +7,6 @@ if(isset($_GET['id'])){
     
     //ao cadastrar novo usuario web, colocar usar esse id para alterar o campo user_web na tabela alunos  
 }
-if(isset($POST['btn'])){
-  echo "ola";
-}
 
 
 
@@ -50,6 +47,9 @@ if(isset($POST['btn'])){
 
     <section id="conteudo">
       <div id="conteudo" class="conteudo">
+      <div class="header">
+          <h3>Alunos</h3>
+        </div>
         <table class="table">
           <thead>
             <tr>
@@ -86,37 +86,51 @@ if(isset($POST['btn'])){
      
 
       <div class="tabela-add anime">
-        <div class="header">
-          <h3>Cadastro Usuario</h3>
+          <div class="header">
+            <h3>Cadastro Usuario</h3>
+          </div>
+        <form class="frmuseradd" id="form1" action="addUsuario.php" method="post" autocomplete="off">          
+            <label for="inp" class="inp">
+              <input type="text" name="txtUser" id="inp" placeholder="&nbsp;" value=""/>
+              <span class="labe">Nome de usuario:</span>
+              <span class="border"></span>
+            </label>
+            <br />
+            <br />
+            <label for="inp" class="inp">
+              <input type="text" name="txtSenha" id="inp" placeholder="&nbsp;" />
+              <span class="labe">Senha:</span>
+              <span class="border"></span>
+            </label>
+            <br />
+            <br />
+            <label for="inp" class="inp">
+              <input type="text" name="txtEmail" id="inp" placeholder="&nbsp;" />
+              <span class="labe">E-mail:</span>
+              <span class="border"></span>
+            </label>
+            <input type="hidden" name="id" value="<?php echo $id;?>">
+            <input type="hidden" name="radiobt" id="radiobtn" value="">
+            <br />
+            <input type="button" value="Salvar" class="btnn third" onClick="submitForms()">
+            
+        </form>
+        <div class="selecionado">
+            <p>Aluno selecionado: <br><strong> <?php echo $name;?></strong> </p>
+            <p>Codigo aluno: <strong><?php echo $id;?></strong></p>
         </div>
-        <button type="button" class="btnn third" onClick="">Salvar</button>
-      <form class="frmuseradd" action="" method="post"autocomplete="off">          
-          <label for="inp" class="inp">
-            <input type="text" name="txtUser" id="inp" placeholder="&nbsp;" value=""/>
-            <span class="labe">Nome de usuario:</span>
-            <span class="border"></span>
-          </label>
-          <br />
-          <br />
-          <label for="inp" class="inp">
-            <input type="text" name="txtSenha" id="inp" placeholder="&nbsp;" />
-            <span class="labe">Senha:</span>
-            <span class="border"></span>
-          </label>
-          <br />
-          <br />
-          <label for="inp" class="inp">
-            <input type="text" name="txtEmail" id="inp" placeholder="&nbsp;" />
-            <span class="labe">E-mail:</span>
-            <span class="border"></span>
-          </label>
-          <br />
-          
-      </form>
-      <div class="selecionado">
-          <p>Aluno selecionado: <strong> <?php echo $name;?></strong> </p>
-          <p>Codigo aluno: <strong><?php echo $id;?></strong></p>
-      </div>
+        <form class="form" id="form2" action="addUsuario.php" method="post">
+            <h3>Situação:</h3>
+            <div class="inputGroup">
+              <input id="radio1" name="radio" type="radio" value="ativo"/>
+              <label for="radio1">Ativo</label>
+            </div>
+            <div class="inputGroup">
+              <input id="radio2" name="radio" type="radio" value="desativo"/>
+              <label for="radio2">Desativo</label>
+            </div>
+        </form>
+        
 
       
       </div>
@@ -707,6 +721,20 @@ if(isset($POST['btn'])){
     <script src="./dist/button-animated.js"></script>
 
     <script>
+
+      submitForms = function(){
+        var radio1= document.getElementById("radio1").checked;
+        var radio2= document.getElementById("radio2").checked;
+                
+          if (radio1==true) {
+            var inp = document.getElementById("radiobtn").value = "1";
+          }else if (radio2==true) {
+            var inp = document.getElementById("radiobtn").value = "0";
+
+          }
+          document.getElementById("form1").submit();
+          
+      }
       $.sidebarMenu($(".sidebar-menu"));
       $.sidebarMenu($(".sidebar-menu-rtl"));
 

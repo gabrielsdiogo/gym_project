@@ -16,9 +16,22 @@
 
   <body>
     <?php
+        session_start();
         $mysqli = new mysqli('db-academia.mysql.uhserver.com','alphadir','Alphagsd1316-','bd_academia') or die(mysqli_error($mysqli));
         $result=$mysqli->query("SELECT * FROM alunos") or die($mysqli->error);
-        session_start();
+        
+        if(isset($_POST['txtUser'])){
+          $user=$_POST['txtUser'];
+          $pwd=$_POST['txtSenha'];
+          $email=$_POST['txtEmail'];
+          $id=$_POST['id'];
+          $situ=$_POST['radiobt'];
+          
+
+          $mysqli->query("INSERT INTO usuario_web(usuario,senha,email,situacao,idaluno) VALUES 
+          ('$user','$pwd','$email','$situ','$id')") or die($mysqli->error);
+        }
+        
     
         
     
