@@ -53,7 +53,7 @@
                       }else{
                         
                         
-                        echo "<a href='processa.php' class='btn btn-info'>Adicionar</a>";
+                        echo "<a href='processa.php?id=".$row['IDaluno']."&name=".$row['nome']."' class='btn btn-info'>Adicionar</a>";
                       }
                   
                   

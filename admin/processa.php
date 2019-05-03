@@ -1,13 +1,14 @@
 <?php
 session_start();
-if(isset($_SESSION['nome'])){
+if(isset($_GET['id'])){
 
-    $id=$_SESSION['id'];
-    $name=$_SESSION['nome'];
+    $id=$_GET['id'];
+    $name=$_GET['name'];
     
     //ao cadastrar novo usuario web, colocar usar esse id para alterar o campo user_web na tabela alunos  
-}else{
-  unset($_SESSION['nome']);
+}
+if(isset($POST['btn'])){
+  echo "ola";
 }
 
 
@@ -68,9 +69,8 @@ if(isset($_SESSION['nome'])){
                         echo "<a style='color:blue; text-decoration:none; cursor:default;'>Adicionado</a>";
                       }else{
                         
-                        $_SESSION['name']=$row['nome'];
-                        $_SESSION['id']=$row['IDaluno'];
-                        echo "<a href='processa.php' class='btn btn-info'>Adicionar</a>";
+                       
+                        echo "<a href='processa.php?id=".$row['IDaluno']."&name=".$row['nome']."' class='btn btn-info'>Adicionar</a>";
                       }
                   
                   
@@ -89,10 +89,10 @@ if(isset($_SESSION['nome'])){
         <div class="header">
           <h3>Cadastro Usuario</h3>
         </div>
-        <button class="btnn third">Salvar</button>
+        <button type="button" class="btnn third" onClick="">Salvar</button>
       <form class="frmuseradd" action="" method="post"autocomplete="off">          
           <label for="inp" class="inp">
-            <input type="text" name="txtUser" id="inp" placeholder="&nbsp;" value="<?php echo $name;?>"/>
+            <input type="text" name="txtUser" id="inp" placeholder="&nbsp;" value=""/>
             <span class="labe">Nome de usuario:</span>
             <span class="border"></span>
           </label>
@@ -113,6 +113,11 @@ if(isset($_SESSION['nome'])){
           <br />
           
       </form>
+      <div class="selecionado">
+          <p>Aluno selecionado: <strong> <?php echo $name;?></strong> </p>
+          <p>Codigo aluno: <strong><?php echo $id;?></strong></p>
+      </div>
+
       
       </div>
     </section>

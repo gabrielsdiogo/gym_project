@@ -27,6 +27,14 @@ body {
   float: left;
   position: relative;
 }
+.selecionado {
+  border: 1px solid red;
+  width: 258px;
+  height: 50px;
+  float: right;
+  margin-top: 82px;
+  margin-right: -161px;
+}
 
 .frmuseradd {
   margin-top: 24px;
