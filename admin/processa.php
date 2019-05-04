@@ -146,7 +146,7 @@ if(isset($_GET['id'])){
           </a>
           <ul class="sidebar-submenu">
             <li>
-              <a href="#"
+              <a href="addUsuario.php"
                 ><i class="fa fa-circle-o"></i> Adicionar novo usuario</a
               >
             </li>

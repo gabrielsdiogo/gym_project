@@ -17,6 +17,7 @@
   <body>
     <?php
         session_start();
+        $_SESSION['code']=true;
         $mysqli = new mysqli('db-academia.mysql.uhserver.com','alphadir','Alphagsd1316-','bd_academia') or die(mysqli_error($mysqli));
         $result=$mysqli->query("SELECT * FROM alunos") or die($mysqli->error);
         
@@ -34,6 +35,8 @@
           $mysqli->query("UPDATE alunos SET user_web='1' WHERE IDaluno = $id ") or die($mysqli->error);
           header("refresh: 0");
         }
+
+        
         
     
         
@@ -321,40 +324,16 @@
         </li>
         <li>
           <a href="#">
-            <i class="fa fa-share"></i> <span>Multilevel</span>
+            <i class="fa fa-share"></i> <span>Sair</span>
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="sidebar-submenu">
             <li>
-              <a href="#"><i class="fa fa-circle-o"></i> Level One</a>
+              <a href="logoff.php"><i class="fa fa-circle-o"></i> Sair do Portal</a>
             </li>
+           
             <li>
-              <a href="#"
-                ><i class="fa fa-circle-o"></i> Level One
-                <i class="fa fa-angle-left pull-right"></i
-              ></a>
-              <ul class="sidebar-submenu">
-                <li>
-                  <a href="#"><i class="fa fa-circle-o"></i> Level Two</a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><i class="fa fa-circle-o"></i> Level Two
-                    <i class="fa fa-angle-left pull-right"></i
-                  ></a>
-                  <ul class="sidebar-submenu">
-                    <li>
-                      <a href="#"><i class="fa fa-circle-o"></i> Level Three</a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-circle-o"></i> Level Three</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-circle-o"></i> Level One</a>
+              <a href="administrador.php"><i class="fa fa-circle-o"></i> Menu Principal</a>
             </li>
           </ul>
         </li>
