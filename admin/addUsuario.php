@@ -30,6 +30,9 @@
 
           $mysqli->query("INSERT INTO usuario_web(usuario,senha,email,situacao,idaluno) VALUES 
           ('$user','$pwd','$email','$situ','$id')") or die($mysqli->error);
+
+          $mysqli->query("UPDATE alunos SET user_web='1' WHERE IDaluno = $id ") or die($mysqli->error);
+          header("refresh: 0");
         }
         
     
@@ -45,6 +48,9 @@
 
     <section id="conteudo">
       <div id="conteudo" class="conteudo">
+        <div class="header">
+            <h3>Alunos</h3>
+        </div>
         <table class="table">
           <thead>
             <tr>
