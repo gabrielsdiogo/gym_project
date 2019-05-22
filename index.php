@@ -147,7 +147,7 @@
                 <img
                   src="https://instagram.faep12-1.fna.fbcdn.net/vp/a12340a4fb159d6b4c9c6598cbdbf7f7/5D61FEDE/t51.2885-15/e35/57870513_3128804800466741_4204603153937151521_n.jpg?_nc_ht=instagram.faep12-1.fna.fbcdn.net"
                   alt="Speaker 1"
-                  class="img-fluid"
+                  class="img-fluid-sec"
                 />
                 <div class="details">
                   <h3><a href="speaker-details.html">Gabriel Diogo</a></h3>
@@ -166,7 +166,7 @@
                 <img
                   src="https://instagram.faep12-1.fna.fbcdn.net/vp/8dc87badde5b5b77d30c29c8db5b78a6/5D82C57A/t51.2885-15/e35/51593926_380220279472838_5101724665270360003_n.jpg?_nc_ht=instagram.faep12-1.fna.fbcdn.net"
                   alt="Speaker 2"
-                  class="img-fluid"
+                  class="img-fluid-sec"
                 />
                 <div class="details">
                   <h3><a href="speaker-details.html">Raony Gois</a></h3>
