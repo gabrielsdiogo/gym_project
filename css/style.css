@@ -18,6 +18,10 @@ body {
   background-color: #f82249;
   color: #fff;
 }
+.img-fluid {
+  max-width: 108%;
+  height: 400px;
+}
 /* SCROLLBAR */
 
 /* width */
