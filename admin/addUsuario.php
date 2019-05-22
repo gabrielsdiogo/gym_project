@@ -18,7 +18,7 @@
     <?php
         session_start();
         $_SESSION['code']=true;
-        $mysqli = new mysqli('db-academia.mysql.uhserver.com','alphadir','Alphagsd1316-','bd_academia') or die(mysqli_error($mysqli));
+        $mysqli = new mysqli('db-academia.mysql.uhserver.com','alphadir','Alphagsd1316@','bd_academia') or die(mysqli_error($mysqli));
         $result=$mysqli->query("SELECT * FROM alunos") or die($mysqli->error);
         
         if(isset($_POST['txtUser'])){
