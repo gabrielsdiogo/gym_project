@@ -58,6 +58,7 @@
             <li><a href="#gallery">Galeria</a></li>
             <li><a href="#contact">Contato</a></li>
             <li><a href="#subscribe">Noticias</a></li>
+            <li><a href="http://gymcenter.desystem.tech/app.apk" target="_BLANK">App</a></li>
             <li class="buy-tickets"><a href="#buy-tickets">Ver Planos</a></li>
           </ul>
 
