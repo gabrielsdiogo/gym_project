@@ -89,7 +89,7 @@
           data-vbtype="video"
           data-autoplay="true"
         ></a>
-        <a href="#about" class="about-btn scrollto">Sobre nós</a>
+        <a href="https://www.facebook.com/SoT-Enterprise-411997552945312/" target="_BLANK" class="about-btn scrollto">Experimente nosso ChatBot</a>
       </div>
     </section>
 
