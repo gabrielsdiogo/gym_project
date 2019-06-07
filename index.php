@@ -83,7 +83,7 @@
         <h1 class="mb-4 pb-0">Projeto<br /><span>Academia </span>Experience</h1>
         <p class="mb-4 pb-0">Estamos te esperando !!</p>
         <a
-          href="https://www.youtube.com/watch?v=QLMHFs9y7Vw"
+          href="https://www.youtube.com/watch?v=svi_zFEFZD4"
           class="venobox play-btn mb-4"
           data-vbtype="video"
           data-autoplay="true"
@@ -437,33 +437,30 @@
                   <h5 class="card-title text-muted text-uppercase text-center">
                     Plano Comum
                   </h5>
-                  <h6 class="card-price text-center">R$150</h6>
+                  <h6 class="card-price text-center">R$79,90</h6>
                   <hr />
                   <ul class="fa-ul">
-                    <li>
-                      <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Regular Seating
-                    </li>
-                    <li>
-                      <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Coffee Break
+                    <li class="text-muted">
+                      <span class="fa-li"><i class="fa fa-times"></i></span
+                      >Acesso ao nosso estacionamento
                     </li>
                     <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Custom Badge
+                      >Aulas de dança
+                    </li>
+                    <li>
+                      <span class="fa-li"><i class="fa fa-check"></i></span
+                      >Spinning
                     </li>
                     <li class="text-muted">
                       <span class="fa-li"><i class="fa fa-times"></i></span
-                      >Community Access
+                      >Acesso ao aplicativo
                     </li>
                     <li class="text-muted">
                       <span class="fa-li"><i class="fa fa-times"></i></span
-                      >Workshop Access
+                      >Acesso ao portal
                     </li>
-                    <li class="text-muted">
-                      <span class="fa-li"><i class="fa fa-times"></i></span
-                      >After Party
-                    </li>
+                    
                   </ul>
                   <hr />
                   <div class="text-center">
@@ -486,33 +483,30 @@
                   <h5 class="card-title text-muted text-uppercase text-center">
                     Plano Premium
                   </h5>
-                  <h6 class="card-price text-center">R$250</h6>
+                  <h6 class="card-price text-center">R$110,50</h6>
                   <hr />
                   <ul class="fa-ul">
                     <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Regular Seating
+                      >Acesso ao nosso estacionamento
                     </li>
                     <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Coffee Break
+                      >Aulas de dança
                     </li>
                     <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Custom Badge
+                      >Spinning
                     </li>
                     <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Community Access
+                      >Acesso ao aplicativo
                     </li>
                     <li class="text-muted">
                       <span class="fa-li"><i class="fa fa-times"></i></span
-                      >Workshop Access
+                      >Acesso ao portal
                     </li>
-                    <li class="text-muted">
-                      <span class="fa-li"><i class="fa fa-times"></i></span
-                      >After Party
-                    </li>
+                    
                   </ul>
                   <hr />
                   <div class="text-center">
@@ -536,32 +530,28 @@
                   <h5 class="card-title text-muted text-uppercase text-center">
                     Plano Pro
                   </h5>
-                  <h6 class="card-price text-center">R$350</h6>
+                  <h6 class="card-price text-center">R$125</h6>
                   <hr />
                   <ul class="fa-ul">
-                    <li>
+                  <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Regular Seating
+                      >Acesso ao nosso estacionamento
                     </li>
                     <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Coffee Break
+                      >Aulas de dança
                     </li>
                     <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Custom Badge
+                      >Spinning
                     </li>
                     <li>
                       <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Community Access
+                      >Acesso ao aplicativo
                     </li>
-                    <li>
+                    <li >
                       <span class="fa-li"><i class="fa fa-check"></i></span
-                      >Workshop Access
-                    </li>
-                    <li>
-                      <span class="fa-li"><i class="fa fa-check"></i></span
-                      >After Party
+                      >Acesso ao portal
                     </li>
                   </ul>
                   <hr />
@@ -571,7 +561,7 @@
                       class="btn"
                       data-toggle="modal"
                       data-target="#buy-ticket-modal"
-                      data-ticket-type="premium-access"
+                      data-ticket-type="Plano PRO"
                     >
                       Compre Agora
                     </button>
@@ -587,7 +577,7 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title">Buy Tickets</h4>
+                <h4 class="modal-title">Informe seus dados</h4>
                 <button
                   type="button"
                   class="close"
@@ -604,7 +594,7 @@
                       type="text"
                       class="form-control"
                       name="your-name"
-                      placeholder="Your Name"
+                      placeholder="Seu nome"
                     />
                   </div>
                   <div class="form-group">
@@ -612,7 +602,7 @@
                       type="text"
                       class="form-control"
                       name="your-email"
-                      placeholder="Your Email"
+                      placeholder="Seu Email"
                     />
                   </div>
                   <div class="form-group">
@@ -621,14 +611,14 @@
                       name="ticket-type"
                       class="form-control"
                     >
-                      <option value="">-- Select Your Ticket Type --</option>
-                      <option value="standard-access">Standard Access</option>
-                      <option value="pro-access">Pro Access</option>
-                      <option value="premium-access">Premium Access</option>
+                      <option value="">-- Selecione aqui seu plano --</option>
+                      <option value="standard-access">Plano Comum</option>
+                      <option value="pro-access">Plano Premium</option>
+                      <option value="premium-access">Plano PRO</option>
                     </select>
                   </div>
                   <div class="text-center">
-                    <button type="submit" class="btn">Buy Now</button>
+                    <button type="submit" class="btn">Comprar agora</button>
                   </div>
                 </form>
               </div>
@@ -743,101 +733,12 @@
     Footer
   ============================-->
     <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 footer-info">
-              <img src="img/logo.png" alt="TheEvenet" />
-              <p>
-                In alias aperiam. Placeat tempore facere. Officiis voluptate
-                ipsam vel eveniet est dolor et totam porro. Perspiciatis ad
-                omnis fugit molestiae recusandae possimus. Aut consectetur id
-                quis. In inventore consequatur ad voluptate cupiditate debitis
-                accusamus repellat cumque.
-              </p>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-                <li>
-                  <i class="fa fa-angle-right"></i> <a href="#">About us</a>
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i> <a href="#">Services</a>
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i>
-                  <a href="#">Terms of service</a>
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i>
-                  <a href="#">Privacy policy</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-                <li>
-                  <i class="fa fa-angle-right"></i> <a href="#">About us</a>
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i> <a href="#">Services</a>
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i>
-                  <a href="#">Terms of service</a>
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i>
-                  <a href="#">Privacy policy</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h4>Contact Us</h4>
-              <p>
-                A108 Adam Street <br />
-                New York, NY 535022<br />
-                United States <br />
-                <strong>Phone:</strong> +1 5589 55488 55<br />
-                <strong>Email:</strong> info@example.com<br />
-              </p>
-
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="instagram"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-                <a href="#" class="google-plus"
-                  ><i class="fa fa-google-plus"></i
-                ></a>
-                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+          &copy; Copyright <strong>Dealer</strong>. Todos os direitos reservados
         </div>
-        <div class="credits">
-          <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-        -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+        
       </div>
     </footer>
     <!-- #footer -->
