@@ -67,6 +67,11 @@
             <tr>
               <td><?php echo $row['nome']?></td>
               <td><?php echo $row['cpf']; ?></td>
+              <td><?php echo $row['cpf']; ?></td>
+              <td><?php echo $row['cpf']; ?></td>
+              <td><?php echo $row['cpf']; ?></td>
+              <td><?php echo $row['cpf']; ?></td>
+              
               <td class="bot">
                   <?php
                       
